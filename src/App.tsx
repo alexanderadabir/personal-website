@@ -1,6 +1,8 @@
-import './App.css'
+import { Icon } from '@iconify/react'
 import { FaGithubAlt, FaLinkedinIn } from 'react-icons/fa'
 import { BsTwitter } from 'react-icons/bs'
+
+import './App.css'
 
 const App = () => {
   return (
@@ -8,7 +10,7 @@ const App = () => {
       <div className="container relative">
         <header className="flex items-center absolute left-0 right-0 top-14">
           <div className="logo">
-            <img src="/img/logo.svg" alt="logo" />
+            <Icon icon="ic:baseline-code-off" width="64" />
           </div>
 
           <nav className="ml-auto mr-14 font-sub font-medium text-xl">
@@ -74,7 +76,7 @@ const App = () => {
                   height="60"
                 />
                 , <br /> My&nbsp;name is <br />{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+                <span className="text-transparent bg-clip-text bg-gradient-to-tr from-primary to-accent">
                   Alexander Adabir
                 </span>
                 <br />
@@ -92,23 +94,47 @@ const App = () => {
               Technologies I&rsquo;ve been working with recently
             </p>
 
-            <div className="grid grid-rows-2 gap-20 mb-52">
-              <div className="flex justify-between">
-                <img width={120} src="/img/svg/html5.svg" alt="HTML5" />
-                <img width={120} src="/img/svg/css3.svg" alt="CSS3" />
-                <img width={120} src="/img/svg/js.svg" alt="JavaScript" />
-                <img width={120} src="/img/svg/ts.svg" alt="TypeScript" />
-                <img width={120} src="/img/svg/react.svg" alt="React" />
-                <img width={120} src="/img/svg/redux.svg" alt="Redux" />
-              </div>
-              <div className="flex justify-between">
-                <img width={120} src="/img/svg/tailwind.svg" alt="Tailwind" />
-                <img width={120} src="/img/svg/sass.svg" alt="Sass" />
-                <img width={120} src="/img/svg/git.svg" alt="Git" />
-                <img width={120} src="/img/svg/nextjs.svg" alt="NextJS" />
-                <img width={120} src="/img/svg/vscode.svg" alt="VsCode" />
-                <img width={120} src="/img/svg/figma.svg" alt="Figma" />
-              </div>
+            <div className="grid grid-cols-6 justify-items-center gap-20 mb-52">
+              <Icon
+                icon="vscode-icons:file-type-html"
+                width="120"
+                height="120"
+              />
+              <Icon
+                icon="vscode-icons:file-type-css"
+                width="120"
+                height="120"
+              />
+              <Icon
+                icon="vscode-icons:file-type-light-js"
+                width="120"
+                height="120"
+              />
+              <Icon
+                icon="vscode-icons:file-type-typescript"
+                width="120"
+                height="120"
+              />
+              <Icon
+                icon="vscode-icons:file-type-reactts"
+                width="120"
+                height="120"
+              />
+              <Icon icon="logos:redux" width="120" height="120" />
+              <Icon icon="logos:tailwindcss-icon" width="120" height="120" />
+              <Icon
+                icon="vscode-icons:file-type-scss"
+                width="120"
+                height="120"
+              />
+              <Icon icon="logos:github-icon" width="120" height="120" />
+              <Icon icon="logos:nextjs-icon" width="120" height="120" />
+              <Icon
+                icon="vscode-icons:file-type-vscode"
+                width="120"
+                height="120"
+              />
+              <Icon icon="logos:figma" width="120" height="120" />
             </div>
           </section>
         </main>
