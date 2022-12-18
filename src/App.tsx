@@ -13,8 +13,8 @@ const App = () => {
             <Icon icon="ic:baseline-code-off" width="64" />
           </div>
 
-          <nav className="ml-auto mr-14 font-sub font-medium text-xl">
-            <ul className="flex gap-16">
+          <nav className="ml-auto mr-14 font-sub font-medium text-lg">
+            <ul className="flex gap-14">
               <li>
                 <a className="hover:text-accent duration-300" href="#">
                   Home
@@ -46,17 +46,17 @@ const App = () => {
             <ul className="flex items-center gap-5">
               <li>
                 <a href="#">
-                  <FaGithubAlt className="w-8 h-8" />
+                  <FaGithubAlt className="w-8 h-8 hover:text-accent duration-300" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <BsTwitter className="w-8 h-8" />
+                  <BsTwitter className="w-8 h-8 hover:text-accent duration-300" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <FaLinkedinIn className="w-8 h-8" />
+                  <FaLinkedinIn className="w-8 h-8 hover:text-accent duration-300" />
                 </a>
               </li>
             </ul>
@@ -64,7 +64,7 @@ const App = () => {
         </header>
         <main>
           <section className="h-screen flex justify-between items-center">
-            <p className="text-6xl leading-[4.375rem]">
+            <p className="text-5xl leading-[4.375rem]">
               <b>
                 Hi
                 <img
@@ -76,7 +76,7 @@ const App = () => {
                   height="60"
                 />
                 , <br /> My&nbsp;name is <br />{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-tr from-primary to-accent">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
                   Alexander Adabir
                 </span>
                 <br />
@@ -87,9 +87,7 @@ const App = () => {
           </section>
 
           <section className="text-center">
-            <h2 className="font-bold text-5xl text-accent mb-12">
-              My&nbsp;Tech Stack
-            </h2>
+            <h2 className="font-bold text-5xl text-accent mb-12">Tech Stack</h2>
             <p className="text-3xl mb-36">
               Technologies I&rsquo;ve been working with recently
             </p>
@@ -136,6 +134,13 @@ const App = () => {
               />
               <Icon icon="logos:figma" width="120" height="120" />
             </div>
+          </section>
+
+          <section className="text-center">
+            <h2 className="font-bold text-5xl text-accent mb-12">Projects</h2>
+            <p className="text-3xl mb-36">
+              Things I&rsquo;ve built so&nbsp;far
+            </p>
           </section>
         </main>
         <footer></footer>

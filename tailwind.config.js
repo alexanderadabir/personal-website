@@ -21,8 +21,8 @@ module.exports = {
     },
 
     fontFamily: {
-      main: ['Poppins', 'sans-serif'],
-      sub: ['DM Sans', 'sans-serif'],
+      main: ['IBM Plex Mono', 'sans-serif'],
+      sub: ['Space Mono', 'sans-serif'],
     },
   },
   plugins: [],
