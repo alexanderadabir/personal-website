@@ -1,6 +1,9 @@
+import { Routes, Route } from 'react-router-dom'
+
+import Main from './pages/Main'
+import About from './pages/About'
+
 import Header from './components/Header'
-import Main from './components/Main'
-import Footer from './components/Footer'
 import './App.css'
 
 const App = () => {
@@ -8,8 +11,15 @@ const App = () => {
     <div className="App text-primary">
       <div className="container relative">
         <Header />
-        <Main />
-        <Footer />
+
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/about" element={<About />} />
+          {/* <Route path="/techStack" element={<TechStack />} /> */}
+          {/* <Route path="/projects" element={<Projects />} /> */}
+          {/* <Route path="/contacts" element={<Contacts />} /> */}
+          {/* <Route path="*" element={<NotFound />} /> */}
+        </Routes>
       </div>
     </div>
   )

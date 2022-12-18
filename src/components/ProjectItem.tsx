@@ -2,7 +2,7 @@ import { FaGithubAlt, FaLink } from 'react-icons/fa'
 
 const ProjectItem = () => {
   return (
-    <div className="max-w-[375px] text-left rounded-b-3xl shadow-2xl shadow-primary">
+    <div className="max-w-[375px] text-left rounded-b-3xl shadow-2xl shadow-primary hover:scale-110 duration-300">
       <img
         className="rounded-t-3xl w-[375px] h-[260px] object-cover"
         src="/img/card-1.jpg"

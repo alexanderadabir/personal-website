@@ -1,31 +1,33 @@
+import { Link } from 'react-router-dom'
+
 const Nav = () => {
   return (
     <nav className="font-medium text-lg">
       <ul className="flex gap-14">
         <li>
-          <a className="hover:text-accent duration-300" href="#">
+          <Link className="hover:text-accent duration-300" to="/">
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="hover:text-accent duration-300" href="#">
+          <Link className="hover:text-accent duration-300" to="/about">
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="hover:text-accent duration-300" href="#">
+          <Link className="hover:text-accent duration-300" to="/techStack">
             Tech Stack
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="hover:text-accent duration-300" href="#">
+          <Link className="hover:text-accent duration-300" to="/projects">
             Projects
-          </a>
+          </Link>
         </li>
         <li>
-          <a className="hover:text-accent duration-300" href="#">
-            Contact
-          </a>
+          <Link className="hover:text-accent duration-300" to="/contacts">
+            Contacts
+          </Link>
         </li>
       </ul>
     </nav>
