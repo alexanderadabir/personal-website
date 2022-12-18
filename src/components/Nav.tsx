@@ -15,7 +15,7 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-          <Link className="hover:text-accent duration-300" to="/techStack">
+          <Link className="hover:text-accent duration-300" to="/techstack">
             Tech Stack
           </Link>
         </li>

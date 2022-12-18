@@ -1,13 +1,28 @@
 import { Icon } from '@iconify/react'
+import { useState, useEffect } from 'react'
 
 import Footer from '../components/Footer'
 import Projects from '../components/Projects'
+import TechStack from '../components/TechStack'
 
 const Main = () => {
+  const [showArrow, setShowArrow] = useState(true)
+
+  function scrollHandler() {
+    const pos = window.scrollY
+    pos > 0 ? setShowArrow(false) : setShowArrow(true)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', scrollHandler)
+
+    return () => window.removeEventListener('scroll', scrollHandler)
+  }, [])
+
   return (
     <>
       <main>
-        <section className="h-screen flex justify-between items-center">
+        <section className="h-screen flex justify-between items-center relative">
           <p className="text-5xl leading-[4.375rem]">
             <b>
               Hi
@@ -30,47 +45,25 @@ const Main = () => {
             </b>
           </p>
           <img width={349} src="/img/my-photo.png" alt="Alexander Adabir" />
+          <div
+            className={`${
+              showArrow ? 'visible opacity-100' : 'invisible opacity-0'
+            } absolute duration-300 bottom-10 left-1/2 -translate-x-1/2 animate-bounce`}
+          >
+            <Icon icon="material-symbols:arrow-circle-down" width="48" />
+          </div>
         </section>
 
-        <section className="text-center">
+        <section className="text-center mb-52" id="next">
           <h2 className="font-bold text-5xl text-accent mb-12">Tech Stack</h2>
           <p className="text-3xl mb-36">
             Technologies I&rsquo;ve been working with recently
           </p>
 
-          <div className="grid grid-cols-6 justify-items-center gap-20 mb-52">
-            <Icon icon="vscode-icons:file-type-html" width="120" height="120" />
-            <Icon icon="vscode-icons:file-type-css" width="120" height="120" />
-            <Icon
-              icon="vscode-icons:file-type-light-js"
-              width="120"
-              height="120"
-            />
-            <Icon
-              icon="vscode-icons:file-type-typescript"
-              width="120"
-              height="120"
-            />
-            <Icon
-              icon="vscode-icons:file-type-reactts"
-              width="120"
-              height="120"
-            />
-            <Icon icon="logos:redux" width="120" height="120" />
-            <Icon icon="logos:tailwindcss-icon" width="120" height="120" />
-            <Icon icon="vscode-icons:file-type-scss" width="120" height="120" />
-            <Icon icon="logos:github-icon" width="120" height="120" />
-            <Icon icon="logos:nextjs-icon" width="120" height="120" />
-            <Icon
-              icon="vscode-icons:file-type-vscode"
-              width="120"
-              height="120"
-            />
-            <Icon icon="logos:figma" width="120" height="120" />
-          </div>
+          <TechStack />
         </section>
 
-        <section className="text-center">
+        <section className="text-center mb-56">
           <h2 className="font-bold text-5xl text-accent mb-12">Projects</h2>
           <p className="text-3xl mb-36">Things I&rsquo;ve built so&nbsp;far</p>
           <Projects />

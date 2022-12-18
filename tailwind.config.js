@@ -24,6 +24,13 @@ module.exports = {
       main: ['IBM Plex Mono', 'sans-serif'],
       sub: ['Space Mono', 'sans-serif'],
     },
+
+    keyframes: {
+      bounce: {
+        '0%, 100%': { transform: 'translateY(10px)' },
+        '50%': { transform: 'translateY(0)' },
+      },
+    },
   },
   plugins: [],
 }

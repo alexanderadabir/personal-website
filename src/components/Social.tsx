@@ -5,17 +5,21 @@ const Social = () => {
   return (
     <ul className="flex items-center gap-5">
       <li>
-        <a href="#">
+        <a
+          href="https://github.com/alexanderadabir"
+          target="_blank"
+          aria-label="Github"
+        >
           <FaGithubAlt className="w-8 h-8 hover:text-accent duration-300" />
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#" target="_blank" aria-label="Twitter">
           <BsTwitter className="w-8 h-8 hover:text-accent duration-300" />
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#" target="_blank" aria-label="LinkedIn">
           <FaLinkedinIn className="w-8 h-8 hover:text-accent duration-300" />
         </a>
       </li>

@@ -3,8 +3,8 @@ import WorkItem from '../components/WorkItem'
 const About = () => {
   return (
     <main className="pt-64 max-w-3xl">
-      <section className="mb-8">
-        <h2 className="font-bold text-5xl text-accent mb-8">About me</h2>
+      <section className="mb-12">
+        <h2 className="font-bold text-5xl text-accent mb-12">About me</h2>
         <p className="text-lg">
           The Generator App is an online tool that helps you to export
           ready-made templates ready to work as your future website. It helps
@@ -13,20 +13,45 @@ const About = () => {
         </p>
       </section>
 
-      <section>
-        <h2 className="font-bold text-5xl text-accent">Work Experience</h2>
+      <section className="mb-12">
+        <h2 className="font-bold text-5xl text-accent mb-12">
+          Work Experience
+        </h2>
 
-        <div className="grid mb-8">
-          <WorkItem />
-          <WorkItem />
-          <WorkItem />
+        <div className="grid gap-8">
+          <WorkItem
+            title="Junior Web Developer"
+            address="Dr. Rajkumar’s Learning App"
+            location="Bengaluru"
+            date="Sep 2021 - Dec 2021"
+            schedule="Full Time"
+          />
+          <WorkItem
+            title="Web Development Intern"
+            address="IonPixelz Web Solutions"
+            location="Bengaluru"
+            date="Sep 2021 - Dec 2021"
+            schedule="Internship"
+          />
+          <WorkItem
+            title="SEO / SEM Specialist"
+            address="HAAPS"
+            location="Bengaluru"
+            date="Sep 2021 - Dec 2021"
+            schedule="Internship"
+          />
         </div>
       </section>
 
       <section className="mb-64">
-        <h2 className="font-bold text-5xl text-accent">Education</h2>
-        <div className="grid mb-9">
-          <WorkItem />
+        <h2 className="font-bold text-5xl text-accent mb-12">Education</h2>
+        <div className="grid gap-8">
+          <WorkItem
+            title="Bachelor in Electronics & Communication"
+            address="Bangalore Instutute of Technology"
+            date="Aug 2015 - Dec 2020"
+            schedule="Full Time"
+          />
         </div>
       </section>
     </main>
