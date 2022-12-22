@@ -12,7 +12,7 @@ import './App.css'
 
 const App = () => {
   return (
-    <div className="dark:bg-dark h-full">
+    <div className="dark:bg-dark">
       <div className="container text-primary relative dark:text-dark_text_primary">
         <Header />
 

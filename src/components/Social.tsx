@@ -1,5 +1,5 @@
-import { FaGithubAlt, FaLinkedinIn } from 'react-icons/fa'
-import { BsTwitter } from 'react-icons/bs'
+import { FaGithubAlt, FaTelegramPlane } from 'react-icons/fa'
+import { SlSocialVkontakte } from 'react-icons/sl'
 
 const Social = () => {
   return (
@@ -14,13 +14,21 @@ const Social = () => {
         </a>
       </li>
       <li>
-        <a href="#" target="_blank" aria-label="Twitter">
-          <BsTwitter className="w-8 h-8 hover:text-accent duration-300 dark:hover:text-dark_text_active" />
+        <a
+          href="https://vk.com/alexanderadabir"
+          target="_blank"
+          aria-label="VK"
+        >
+          <SlSocialVkontakte className="w-8 h-8 hover:text-accent duration-300 dark:hover:text-dark_text_active" />
         </a>
       </li>
       <li>
-        <a href="#" target="_blank" aria-label="LinkedIn">
-          <FaLinkedinIn className="w-8 h-8 hover:text-accent duration-300 dark:hover:text-dark_text_active" />
+        <a
+          href="https://t.me/alexanderadabir"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <FaTelegramPlane className="w-8 h-8 hover:text-accent duration-300 dark:hover:text-dark_text_active" />
         </a>
       </li>
     </ul>
