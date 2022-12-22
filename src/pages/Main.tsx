@@ -37,14 +37,14 @@ const Main = () => {
               ,<br />
               My&nbsp;name is
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent dark:from-dark_text_primary dark:to-dark_text_active">
                 Alexander Adabir
               </span>
               <br />
               I&nbsp;build things for web
             </b>
           </p>
-          <img width={349} src="/img/my-photo.png" alt="Alexander Adabir" />
+          <div className="w-[349px] h-[349px] bg-my-photo bg-cover dark:bg-dark-my-photo"></div>
           <div
             className={`${
               showArrow ? 'visible opacity-100' : 'invisible opacity-0'
@@ -55,7 +55,9 @@ const Main = () => {
         </section>
 
         <section className="text-center mb-52" id="next">
-          <h2 className="font-bold text-5xl text-accent mb-12">Tech Stack</h2>
+          <h2 className="font-bold text-5xl text-accent mb-12 dark:text-dark_text_accent">
+            Tech Stack
+          </h2>
           <p className="text-3xl mb-36">
             Technologies I&rsquo;ve been working with recently
           </p>
@@ -64,7 +66,9 @@ const Main = () => {
         </section>
 
         <section className="text-center mb-56">
-          <h2 className="font-bold text-5xl text-accent mb-12">Projects</h2>
+          <h2 className="font-bold text-5xl text-accent mb-12 dark:text-dark_text_accent">
+            Projects
+          </h2>
           <p className="text-3xl mb-36">Things I&rsquo;ve built so&nbsp;far</p>
           <Projects />
         </section>

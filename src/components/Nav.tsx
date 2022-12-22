@@ -1,33 +1,73 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Nav = () => {
   return (
     <nav className="font-medium text-lg">
       <ul className="flex gap-14">
         <li>
-          <Link className="hover:text-accent duration-300" to="/">
+          <NavLink
+            className={({ isActive }) =>
+              (isActive
+                ? 'text-accent dark:text-dark_text_active'
+                : undefined) +
+              ' hover:text-accent duration-300 dark:hover:text-dark_text_active'
+            }
+            to="/"
+          >
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="hover:text-accent duration-300" to="/about">
+          <NavLink
+            className={({ isActive }) =>
+              (isActive
+                ? 'text-accent dark:text-dark_text_active'
+                : undefined) +
+              ' hover:text-accent duration-300 dark:hover:text-dark_text_active'
+            }
+            to="/about"
+          >
             About
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="hover:text-accent duration-300" to="/techstack">
+          <NavLink
+            className={({ isActive }) =>
+              (isActive
+                ? 'text-accent dark:text-dark_text_active'
+                : undefined) +
+              ' hover:text-accent duration-300 dark:hover:text-dark_text_active'
+            }
+            to="/techstack"
+          >
             Tech Stack
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="hover:text-accent duration-300" to="/projects">
+          <NavLink
+            className={({ isActive }) =>
+              (isActive
+                ? 'text-accent dark:text-dark_text_active'
+                : undefined) +
+              ' hover:text-accent duration-300 dark:hover:text-dark_text_active'
+            }
+            to="/projects"
+          >
             Projects
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="hover:text-accent duration-300" to="/contacts">
+          <NavLink
+            className={({ isActive }) =>
+              (isActive
+                ? 'text-accent dark:text-dark_text_active'
+                : undefined) +
+              ' hover:text-accent duration-300 dark:hover:text-dark_text_active'
+            }
+            to="/contacts"
+          >
             Contacts
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>

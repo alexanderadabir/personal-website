@@ -12,17 +12,19 @@ import './App.css'
 
 const App = () => {
   return (
-    <div className="container text-primary relative">
-      <Header />
+    <div className="dark:bg-dark h-full">
+      <div className="container text-primary relative dark:text-dark_text_primary">
+        <Header />
 
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/techstack" element={<TechStack />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contacts" element={<Contacts />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/techstack" element={<TechStack />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
     </div>
   )
 }

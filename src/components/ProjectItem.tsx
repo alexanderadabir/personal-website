@@ -18,10 +18,11 @@ const ProjectItem = ({
   github,
 }: Props) => {
   return (
-    <div className="max-w-[375px] text-left rounded-3xl shadow-2xl shadow-primary hover:scale-110 duration-300">
+    <div className="max-w-[375px] text-left rounded-3xl shadow-2xl shadow-primary dark:shadow-dark_text_primary hover:scale-110 duration-300">
       <div
         className={`${
-          !img && 'bg-primary flex justify-center items-center'
+          !img &&
+          'bg-primary dark:bg-dark_text_primary flex justify-center items-center'
         } w-[375px] h-[260px] rounded-t-3xl`}
       >
         {img ? (
@@ -31,7 +32,9 @@ const ProjectItem = ({
             alt="Website screenshot"
           />
         ) : (
-          <h4 className="text-accent text-3xl font-light">Soon</h4>
+          <h4 className="text-accent dark:text-dark_text_active text-3xl font-bold">
+            Soon
+          </h4>
         )}
       </div>
 
@@ -45,14 +48,14 @@ const ProjectItem = ({
             Tech stack: <span className="font-light">{stack}</span>
           </p>
           <div className="flex justify-between">
-            <p className="flex items-center gap-2 hover:text-accent duration-300">
+            <p className="flex items-center gap-2 hover:text-accent dark:hover:text-dark_text_active duration-300">
               <FaLink className="inline-block text-xl" />
               <a className="underline" href={livePreview} target="_blank">
                 Live Preview
               </a>
             </p>
 
-            <p className="flex items-center gap-2 hover:text-accent duration-300">
+            <p className="flex items-center gap-2 hover:text-accent dark:hover:text-dark_text_active duration-300">
               <FaGithubAlt className="inline-block text-xl" />
               <a className="underline" href={github} target="_blank">
                 View Code

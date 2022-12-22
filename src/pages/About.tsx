@@ -2,9 +2,11 @@ import WorkItem from '../components/WorkItem'
 
 const About = () => {
   return (
-    <main className="pt-64 max-w-3xl">
+    <main className="py-64 max-w-3xl">
       <section className="mb-12">
-        <h2 className="font-bold text-5xl text-accent mb-12">About me</h2>
+        <h2 className="font-bold text-5xl text-accent mb-12 dark:text-dark_text_accent">
+          About me
+        </h2>
         <p className="text-lg">
           The Generator App is an online tool that helps you to export
           ready-made templates ready to work as your future website. It helps
@@ -14,7 +16,7 @@ const About = () => {
       </section>
 
       <section className="mb-12">
-        <h2 className="font-bold text-5xl text-accent mb-12">
+        <h2 className="font-bold text-5xl text-accent mb-12 dark:text-dark_text_accent">
           Work Experience
         </h2>
 
@@ -43,8 +45,10 @@ const About = () => {
         </div>
       </section>
 
-      <section className="mb-64">
-        <h2 className="font-bold text-5xl text-accent mb-12">Education</h2>
+      <section>
+        <h2 className="font-bold text-5xl text-accent mb-12 dark:text-dark_text_accent">
+          Education
+        </h2>
         <div className="grid gap-8">
           <WorkItem
             title="Bachelor in Electronics & Communication"

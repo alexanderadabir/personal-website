@@ -17,11 +17,11 @@ const Footer = () => {
 
         <p className="text">
           Designed and built by&nbsp;
-          <span className="bg-clip-text bg-transparent bg-gradient-to-r from-primary to-accent">
+          <span className="bg-clip-text bg-transparent bg-gradient-to-r from-primary to-accent dark:from-dark_text_primary dark:to-dark_text_active">
             Alexander Adabir
           </span>{' '}
           with{' '}
-          <span className="bg-clip-text bg-transparent bg-gradient-to-r from-primary to-accent">
+          <span className="bg-clip-text bg-transparent bg-gradient-to-r from-primary to-accent dark:from-dark_text_primary dark:to-dark_text_active">
             Love &amp;&nbsp;Coffee
           </span>
         </p>

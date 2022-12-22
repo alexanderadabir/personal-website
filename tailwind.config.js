@@ -2,7 +2,14 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    darkMode: 'class',
+    extend: {
+      backgroundImage: {
+        transparent: 'transparent',
+        'my-photo': "url('../public/img/my-photo.png')",
+        'dark-my-photo': "url('../public/img/dark-my-photo.png')",
+      },
+    },
     container: {
       center: true,
       screens: {
@@ -18,6 +25,10 @@ module.exports = {
       transparent: 'transparent',
       primary: '#264653',
       accent: '#2A9D8F',
+      dark: '#191919',
+      dark_text_primary: '#F4A261',
+      dark_text_active: '#E76F51',
+      dark_text_accent: '#E9C46A',
     },
 
     fontFamily: {
